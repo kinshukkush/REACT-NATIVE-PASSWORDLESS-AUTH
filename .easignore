@@ -1,0 +1,60 @@
+# Files to exclude from EAS Build uploads
+
+# Dependencies (reinstalled on build server)
+node_modules/
+package-lock.json
+
+# Expo
+.expo/
+.expo-shared/
+web-build/
+
+# Build outputs  
+dist/
+build/
+android/
+ios/
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# Logs
+*.log
+npm-debug.*
+yarn-error.log
+
+# OS
+.DS_Store
+Thumbs.db
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-*
+
+# TypeScript
+*.tsbuildinfo
+
+# Documentation (not needed)
+*.md
+!README.md
+
+# Test files
+__tests__/
+*.test.ts
+*.test.tsx
+*.spec.ts
+*.spec.tsx
+
+# Misc
+.env.local
+.env.*.local

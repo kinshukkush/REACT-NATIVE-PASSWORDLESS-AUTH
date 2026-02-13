@@ -1,0 +1,29 @@
+# Passwordless Authentication Flow
+
+node_modules/
+.expo/
+.expo-shared/
+dist/
+npm-debug.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+
+# macOS
+.DS_Store
+
+# TypeScript
+*.tsbuildinfo
+
+# Documentation files (for development only)
+WHERE_IS_OTP.md
+TEST_NOW.md
+QUICKSTART.md
+file_explanation.md
+ARCHITECTURE.md
+SUBMISSION_CHECKLIST.md
+APK_BUILD_GUIDE.md

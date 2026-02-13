@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "Passwordless Auth Flow",
+    "slug": "passwordless-auth-flow",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#007AFF",
+      "resizeMode": "contain"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.kinshuk.passwordlessauth"
+    },
+    "android": {
+      "package": "com.kinshuk.passwordlessauth",
+      "adaptiveIcon": {
+        "backgroundColor": "#007AFF"
+      },
+      "splash": {
+        "backgroundColor": "#007AFF",
+        "resizeMode": "contain"
+      },
+      "permissions": []
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "49794a16-4084-409c-957d-5313ff30ddae"
+      }
+    },
+    "plugins": []
+  }
+}
