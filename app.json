@@ -2,7 +2,7 @@
   "expo": {
     "name": "Passwordless Auth Flow",
     "slug": "passwordless-auth-flow",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -18,6 +18,7 @@
       "bundleIdentifier": "com.kinshuk.passwordlessauth"
     },
     "android": {
+      "versionCode": 2,
       "package": "com.kinshuk.passwordlessauth",
       "icon": "./assets/icon.png",
       "adaptiveIcon": {
