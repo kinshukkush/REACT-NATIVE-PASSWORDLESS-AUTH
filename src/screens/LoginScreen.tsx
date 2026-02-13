@@ -9,6 +9,7 @@ import {
   Platform,
   Alert,
   ActivityIndicator,
+  Image,
 } from 'react-native';
 import { createOTP } from '../services/otpManager';
 
@@ -37,7 +38,6 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({ onNavigate }) => {
     }
 
     setIsLoading(true);
-
 
     try {
       const otp = await createOTP(email.trim().toLowerCase());
@@ -71,6 +71,15 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({ onNavigate }) => {
       behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
     >
       <View style={styles.content}>
+        <View style={styles.header}>
+          <Image
+            source={require('../../assets/logo.svg')}
+            style={styles.logo}
+            resizeMode="contain"
+          />
+          <Text style={styles.madeBy}>Made by Kinshuk Saxena</Text>
+        </View>
+
         <Text style={styles.title}>Welcome</Text>
         <Text style={styles.subtitle}>Enter your email to get started</Text>
 
@@ -78,7 +87,7 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({ onNavigate }) => {
           <Text style={styles.label}>Email Address</Text>
           <TextInput
             style={styles.input}
-            placeholder="john.doe@example.com"
+            placeholder="Enter your email"
             placeholderTextColor="#999"
             value={email}
             onChangeText={setEmail}
@@ -121,6 +130,20 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 24,
     justifyContent: 'center',
+  },
+  header: {
+    alignItems: 'center',
+    marginBottom: 32,
+  },
+  logo: {
+    width: 80,
+    height: 80,
+    marginBottom: 12,
+  },
+  madeBy: {
+    fontSize: 14,
+    color: '#666',
+    fontWeight: '500',
   },
   title: {
     fontSize: 32,

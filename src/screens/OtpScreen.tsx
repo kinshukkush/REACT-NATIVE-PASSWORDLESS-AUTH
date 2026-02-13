@@ -7,6 +7,7 @@ import {
   StyleSheet,
   Alert,
   ActivityIndicator,
+  Image,
 } from 'react-native';
 import {
   validateOTP,
@@ -185,6 +186,14 @@ export const OtpScreen: React.FC<OtpScreenProps> = ({
   return (
     <View style={styles.container}>
       <View style={styles.content}>
+        <View style={styles.header}>
+          <Image
+            source={require('../../assets/logo.svg')}
+            style={styles.logo}
+            resizeMode="contain"
+          />
+        </View>
+
         <TouchableOpacity style={styles.backButton} onPress={onBack}>
           <Text style={styles.backButtonText}>← Back</Text>
         </TouchableOpacity>
@@ -256,6 +265,8 @@ export const OtpScreen: React.FC<OtpScreenProps> = ({
             </Text>
           )}
         </TouchableOpacity>
+
+        <Text style={styles.footer}>Made by Kinshuk Saxena</Text>
       </View>
     </View>
   );
@@ -270,6 +281,14 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 24,
     justifyContent: 'center',
+  },
+  header: {
+    alignItems: 'center',
+    marginBottom: 20,
+  },
+  logo: {
+    width: 60,
+    height: 60,
   },
   backButton: {
     position: 'absolute',
@@ -365,5 +384,11 @@ const styles = StyleSheet.create({
   },
   resendButtonTextDisabled: {
     color: '#999',
+  },
+  footer: {
+    textAlign: 'center',
+    fontSize: 12,
+    color: '#999',
+    marginTop: 24,
   },
 });

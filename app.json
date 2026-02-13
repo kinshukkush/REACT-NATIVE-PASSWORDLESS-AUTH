@@ -4,6 +4,7 @@
     "slug": "passwordless-auth-flow",
     "version": "1.0.0",
     "orientation": "portrait",
+    "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
       "backgroundColor": "#007AFF",
@@ -18,7 +19,9 @@
     },
     "android": {
       "package": "com.kinshuk.passwordlessauth",
+      "icon": "./assets/icon.png",
       "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#007AFF"
       },
       "splash": {
@@ -28,7 +31,8 @@
       "permissions": []
     },
     "web": {
-      "bundler": "metro"
+      "bundler": "metro",
+      "favicon": "./assets/icon.png"
     },
     "extra": {
       "eas": {
