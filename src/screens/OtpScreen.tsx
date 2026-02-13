@@ -188,7 +188,7 @@ export const OtpScreen: React.FC<OtpScreenProps> = ({
       <View style={styles.content}>
         <View style={styles.header}>
           <Image
-            source={require('../../assets/logo.svg')}
+            source={require('../../assets/logo.png')}
             style={styles.logo}
             resizeMode="contain"
           />

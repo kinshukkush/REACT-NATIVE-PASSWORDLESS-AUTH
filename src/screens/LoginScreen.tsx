@@ -73,7 +73,7 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({ onNavigate }) => {
       <View style={styles.content}>
         <View style={styles.header}>
           <Image
-            source={require('../../assets/logo.svg')}
+            source={require('../../assets/logo.png')}
             style={styles.logo}
             resizeMode="contain"
           />
